@@ -3,4 +3,3 @@ anfrage = input("")
 while anfrage != "exit":
     anfrage = input("")
     print("echo: " + anfrage)
-    bla
