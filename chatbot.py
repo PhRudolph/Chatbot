@@ -1,8 +1,5 @@
 print("Hello I am a Chatbot. Type 'exit' to end program")
-
-while True:
+anfrage = input("")
+while anfrage != "exit":                                                         #schleife
     anfrage = input("")
-    if anfrage == "exit":
-        break
-    else:
-        print("echo: " + anfrage)
+    print("echo: " + anfrage)
