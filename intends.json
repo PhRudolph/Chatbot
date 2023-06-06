@@ -1,0 +1,8 @@
+{"intents":[
+    {"tag": "word",
+         "patterns":["problem"],
+         "responses":["answer"],
+         "context_set": ""
+    }    
+    ]
+}
