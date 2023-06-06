@@ -1,0 +1,28 @@
+{
+    "greetings": {
+      "responses": ["Hallo! wie kann ich Ihnen heute helfen?", "Hallo, wobei benötigen Sie Unterstützung?", "Moin, wie kann Ihnen die IT heute weiterhelfen?"],
+      "examples": ["Hallo", "Hi", "Moin", "Was geht?"]
+    },
+    "password_reset": {
+      "responses": ["Um Ihr Passwort zu ändern drücken Sie, sofern Sie mit dem Endgerät mit dem Firmennetzwerk verbunden und angemeldet sind -Windows+Alt+Entfern- und wählen Sie Kennwort ändern. Sollten Sie sich an ihrem PC nicht anmelden können, schreiben Sie bitte -Ticket erstellen- in den Chat. Dadurch wird automatisch ein Ticket in unserem Ticketsystem erstellt und der nächste freie Mitarbeiter wird sich um Ihre Anfrage kümmern und Sie kontaktieren."],
+      "examples": ["Ich habe mein PAsswort vergessen","Passwort vergessen", "Wie setze ich mein Passwort zurück?", "Passwort ändern", "Passwort"]
+    },
+    "software_installation": {
+      "responses": ["Für die Installation einer Software, schauen Sie bitte in Ihr SoftwareCenter oder Unternehmensportal auf Ihremn Rechner. Sollte dies nicht vorhanden sein oder die gewünschte Software nicht gelistet sein."],
+      "examples": ["Ich möchte eine Software installieren", "Können Sie mich durch den Installationsprozess führen?","Installation für Software", "Installation"]
+    },
+    "hardware_issue": {
+      "responses": ["Für Hardwareprobleme schreiben Sie bitte -Hardware Ticket erstellen-."],
+      "examples": ["Mein Laptop schaltet sich nicht mehr ein","Mein Laptop schaltet sich nicht ein","Mein Laptop nicht mehr", "Mein PC nicht mehr","Mein PC schaltet sich nicht mehr ein"]
+    },
+    
+    "printer_issue":{
+        "responses":["Starten Sie den Drucker neu","Versuchen Sie den Drucker neu einzubinden","Schreiben Sie - Ticket erstellen-, damit ein Ticket für Ihr Problem erstellt wird und ein Mitarbeiter sich Ihrem Problem annehmen kann"],
+        "expamples":["Der Drucker geht nicht mehr", "Druckerproblem", "Drucker druckt nicht"]
+    },
+
+    "network_troubleshooting": {
+      "responses": ["Um Ihr Netzwerkproblem beheben zu können, probieren Sie die Internetverbindung zu trennen, indem Sie das Kabel vom Computer abziehen oder das WLAN aus und wieder an machen", "Starten Sie das Gerät einmal neu", "Schreiben Sie - Ticket erstellen-, damit ein Ticket für Ihr Problem erstellt wird und ein Mitarbeiter sich Ihrem Problem annehmen kann"],
+      "examples": ["I can't connect to the Wi-Fi", "The internet is slow"]
+    }
+  }
