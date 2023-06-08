@@ -44,7 +44,10 @@ while True:
     user_input = input("> ")
 
     if not user_input.strip():
-        print("Exiting the chatbot.")
+        if language == "en": 
+            print("Exiting the chatbot."),
+        else:    
+            print("Chatbot wird deaktiviert."),
         break
 
     intent = ""
