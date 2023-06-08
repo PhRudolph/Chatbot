@@ -4,6 +4,7 @@ from mail_service import mail_service
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+#Testet den Mail Service mit unittest
 class MailServiceTests(unittest.TestCase):
 
     def test_send_email(self):

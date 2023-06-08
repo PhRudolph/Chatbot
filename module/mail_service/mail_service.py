@@ -3,6 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+#Erstellt E-Mail und sendet sie and die E-Mail
 class mail_service:
 
     smtp_server = "smtp.gmail.com"

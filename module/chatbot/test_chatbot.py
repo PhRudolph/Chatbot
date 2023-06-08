@@ -4,6 +4,7 @@ from io import StringIO
 
 from chatbot import chatbot
 
+#Test für den Chatbot
 class ChatBotTests(unittest.TestCase):
     def test_chatbot_exit(self):
         with patch('builtins.input', side_effect=["exit"]):
