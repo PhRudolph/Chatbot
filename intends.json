@@ -8,8 +8,9 @@
       "examples": ["Ich habe mein PAsswort vergessen","Passwort vergessen", "Wie setze ich mein Passwort zurück?", "Passwort ändern", "Passwort"]
     },
     "software_installation": {
-      "responses": ["Für die Installation einer Software, schauen Sie bitte in Ihr SoftwareCenter oder Unternehmensportal auf Ihremn Rechner. Sollte dies nicht vorhanden sein oder die gewünschte Software nicht gelistet sein."],
-      "examples": ["Ich möchte eine Software installieren", "Können Sie mich durch den Installationsprozess führen?","Installation für Software", "Installation"]
+      "examples": ["Ich möchte eine Software installieren", "Können Sie mich durch den Installationsprozess führen?","Installation für Software", "Installation"],
+      "responses": ["Für die Installation einer Software, schauen Sie bitte in Ihr SoftwareCenter oder Unternehmensportal auf Ihremn Rechner. Sollte dies nicht vorhanden sein oder die gewünschte Software nicht gelistet sein."]
+      
     },
     "hardware_issue": {
       "responses": ["Für Hardwareprobleme schreiben Sie bitte -Hardware Ticket erstellen-."],
