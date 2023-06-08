@@ -4,8 +4,10 @@ from mail_service import mail_service
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+#Testing MailService with unittests
 class MailServiceTests(unittest.TestCase):
 
+#Send examplemail to test functionality
     def test_send_email(self):
         with patch('smtplib.SMTP') as mock_smtp:
             mail_service.smtp_server = "test_server"
