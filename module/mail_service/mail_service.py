@@ -13,21 +13,21 @@ class mail_service:
     to_address = "lucakamrath.arbeit@gmail.com"
 
 #Writing Mail and call send-email methode
-    def mail_service(subject, body):
+    def mail_service(self, subject, body):
 
         message = MIMEMultipart()
-        message['From'] = mail_service.from_address
-        message['To'] = mail_service.to_address
+        message['From'] = self.from_address
+        message['To'] = self.to_address
         message['Subject'] = subject
         message.attach(MIMEText(body, 'plain'))
 
-        mail_service.send_email(message)
+        self.send_email(message)
 
         print('Email sent successfully!')
 
 #Login into mail programm and sending mail
-    def send_email(message):
-            with smtplib.SMTP(mail_service.smtp_server, mail_service.smtp_port) as server:
+    def send_email(self, message):
+            with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
                 server.starttls()
-                server.login(mail_service.from_address, 'krmrkyvnkqtfrpbg')
-                server.send_message(message)
+                server.login(self.from_address, 'krmrkyvnkqtfrpbg')
+                server.send_message(message)                

@@ -1,5 +1,11 @@
 import json
 import random
+import sys
+
+sys.path.append('module/')
+
+from database.database import database
+from mail_service.mail_service import mail_service
 
 # Load intents from JSON files
 def load_intents(file_path):
@@ -10,12 +16,27 @@ intents_english = load_intents('intents.json')
 intents_german = load_intents('intends.json')
 
 # Function to generate a random response from the intents database
-def get_response(intent, language):
+def get_response(user_input, intent, language):
     intents = intents_english if language == 'en' else intents_german
     if intent in intents:
         responses = intents[intent]["responses"]
         return random.choice(responses)
     else:
+        db = database()
+        mailservice = mail_service()
+        
+        db.connectToDb("database.db")
+        
+        create_sql = "".join("CREATE TABLE errorRequests(requestId INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, requestText TEXT NOT NULL)") 
+        print(create_sql)
+        db.executeStatement(create_sql)
+        
+        insert_sql = "".join("INSERT INTO errorRequests (requestText) VALUES ("+ user_input + ");")
+        print(insert_sql)
+        db.executeStatement(insert_sql)
+        
+        mailservice.mail_service("FEHLER BEI CHATBOT ", user_input)
+        
         if language == 'en':
             return "I'm sorry, I couldn't understand your request. How can I assist you with your IT needs today?"
         else:
@@ -46,6 +67,7 @@ while True:
     if not user_input.strip():
         if language == "en": 
             print("Exiting the chatbot."),
+            
         else:    
             print("Chatbot wird deaktiviert."),
         break
@@ -59,5 +81,5 @@ while True:
                 intent = key
                 break
 
-    response = get_response(intent, language)
+    response = get_response(user_input, intent, language)
     print(response)

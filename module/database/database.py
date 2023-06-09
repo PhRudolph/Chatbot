@@ -8,7 +8,7 @@ class database():
             self.dbCursor = self.dbConnection.cursor()
         
             print("Database connected successfully.") 
-            self.dbConnection.commit()  
+            self.dbConnection.commit()
         except:
             print("Database connection failed.")
         
@@ -27,7 +27,7 @@ class database():
         
     def insertIntoDb(self, statement):
         try:
-            self.dbCursor.execute("INSERT INTO database (requestText) VALUES (?)", statement)
+            self.dbCursor.execute("INSERT INTO errorRequests (requestText) VALUES ?;", statement)
             self.dbConnection.commit()
         except:
             print("Database Insert failed.")   
