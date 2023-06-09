@@ -7,18 +7,18 @@ from database import database
 
 class DatabaseTests(unittest.TestCase):
     def setUp(self):
-        self.database = database()  # Initialize the database connection
+        self.database = database()
     
     def test_database_connect(self):
         with patch('sys.stdout', new=StringIO()) as output:
-            self.database.connectToDb()
+            self.database.connectToDb("database")
             self.assertEqual("Database connected successfully.", output.getvalue().strip())
             
     def test_database_close(self):
         with patch('sys.stdout', new=StringIO()) as output:
-            self.database.connectToDb()
+            self.database.connectToDb("database")
             self.database.closeConnection()
             self.assertEqual("Database connected successfully.\nDatabase Connection closed.", 
                              output.getvalue().strip()) 
-                                
+
 unittest.main()
