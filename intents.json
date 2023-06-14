@@ -1,23 +1,22 @@
 {
-    "greetings": {
-      "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?", "Hey! How can I assist you with your IT needs?"],
-      "examples": ["Hello", "Hi", "How are you?"]
-    },
-    "password_reset": {
-      "responses": ["To reset your password, please contact our IT support team at support@company.com or call our helpline at 123-456-7890."],
-      "examples": ["I forgot my password", "How can I reset my password?"]
-    },
-    "software_installation": {
-      "responses": ["To request software installation, please submit a ticket through our online help desk portal or contact the IT support team for further assistance."],
-      "examples": ["I need help installing software", "Can you guide me through the software installation process?"]
-    },
-    "hardware_issue": {
-      "responses": ["For hardware issues, please submit a ticket with a detailed description of the problem. Our IT support team will promptly assist you."],
-      "examples": ["My laptop won't turn on", "The printer is not working"]
-    },
-    "network_troubleshooting": {
-      "responses": ["To troubleshoot network connectivity issues, please ensure that you are connected to the correct network, restart your device, and contact the IT support team if the problem persists."],
-      "examples": ["I can't connect to the Wi-Fi", "The internet is slow"]
-    }
+  "greetings": {
+    "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?", "Hey! How can I assist you with your IT needs?"],
+    "examples": ["Hello", "Hi", "How are you?"]
+  },
+  "password_reset": {
+    "responses": ["To reset your password, please contact our IT support team at support@company.com or call our helpline at 123-456-7890."],
+    "examples": ["I forgot my password", "How can I reset my password?", "password"]
+  },
+  "software_installation": {
+    "responses": ["To request software installation, please submit a ticket through our online help desk portal or contact the IT support team for further assistance."],
+    "examples": ["I need help installing software", "Can you guide me through the software installation process?", "software"]
+  },
+  "hardware_issue": {
+    "responses": ["For hardware issues, please submit a ticket with a detailed description of the problem. Our IT support team will promptly assist you."],
+    "examples": ["My laptop won't turn on", "The printer is not working", "laptop", "printer", "hardware"]
+  },
+  "network_troubleshooting": {
+    "responses": ["To troubleshoot network connectivity issues, please ensure that you are connected to the correct network, restart your device, and contact the IT support team if the problem persists."],
+    "examples": ["I can't connect to the Wi-Fi", "The internet is slow", "wifi", "wi-fi"]
   }
-  
+}
