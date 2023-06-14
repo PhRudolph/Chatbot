@@ -1,7 +1,7 @@
 {
   "greetings": {
     "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?", "Hey! How can I assist you with your IT needs?"],
-    "examples": ["Hello", "Hi", "How are you?"]
+    "examples": ["Hello", "Hi", "How are you?", "good morning", "greetings"]
   },
   "password_reset": {
     "responses": ["To reset your password, please contact our IT support team at support@company.com or call our helpline at 123-456-7890."],
